@@ -22,7 +22,7 @@ namespace HelloWorld
 
             return name == null
                 ? req.CreateResponse(HttpStatusCode.BadRequest, "Please pass a name on the query string or in the request body")
-                : req.CreateResponse(HttpStatusCode.OK, "Hello " + name + "-san");
+                : req.CreateResponse(HttpStatusCode.OK, "Hello " + name);
         }
     }
 }
